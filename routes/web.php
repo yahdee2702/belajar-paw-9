@@ -49,3 +49,7 @@ Route::get('/route_priority/user', function() {
 Route::get('/route_priority/user', function() {
     return "This is Route 2";
 });
+
+Route::fallback(function() {
+    return 'This is Fallback Route';
+});
