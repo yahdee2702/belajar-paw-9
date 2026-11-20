@@ -53,3 +53,15 @@ Route::get('/route_priority/user', function() {
 Route::fallback(function() {
     return 'This is Fallback Route';
 });
+
+Route::prefix('admin')->name('admin.')->group(function() {
+    Route::get('/dashboard', function() {
+        return "This is admin dashboard";
+    })->name('dashboard');
+    Route::get('/users', function() {
+        return "This is user data on admin page";
+    })->name('users');
+    Route::get('/items', function() {
+        return "This is item data on admin page";
+    })->name('items');
+});
