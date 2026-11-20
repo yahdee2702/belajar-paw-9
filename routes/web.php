@@ -37,3 +37,15 @@ Route::get('/title/{title}', function($title) {
 })->where('title', '[A-Za-z]+');
 
 Route::get('/profile/{profileId}', [RouteController::class, 'profile'])->name('profileRouteName');
+
+// Route::get('/route_priority/{rpId}', function($rpId) {
+//     return "This is Route One";
+// });
+
+Route::get('/route_priority/user', function() {
+    return "This is Route 1";
+});
+
+Route::get('/route_priority/user', function() {
+    return "This is Route 2";
+});
