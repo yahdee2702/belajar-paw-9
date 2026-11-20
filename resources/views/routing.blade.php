@@ -12,11 +12,18 @@
         <h1>Belajar Laravel Routing</h1>
  
         <div class="list-group list-group-numbered mt-4">
+            <a href="{{ url('/') }}" class="list-group-item list-group-item-action">
+                Redirect Route
+            </a>
+
             <a href="{{ url('/basic_routing') }}" class="list-group-item list-group-item-action">
                 Basic Routing (No View, No Controller)
             </a>
             <a href="{{ url('/view_route') }}" class="list-group-item list-group-item-action">
                 View Route
+            </a>
+            <a href="{{ url('/controller_route') }}" class="list-group-item list-group-item-action">
+                Controller Route
             </a>
         </div>
  

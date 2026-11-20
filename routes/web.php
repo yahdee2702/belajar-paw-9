@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RouteController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -15,3 +16,7 @@ Route::get('/basic_routing', function() {
 });
 
 Route::view('/view_route', 'view_route', ['name' => 'Yahdi']);
+
+Route::get('/controller_route', [RouteController::class, 'index']);
+
+Route::redirect('/', '/routing');
