@@ -31,3 +31,7 @@ Route::get('/posts/{post}/comments/{comment}', function($postId, $commentId) {
 Route::get('username/{name?}', function($name = null) {
     return 'Username: '.$name;
 });
+
+Route::get('/title/{title}', function($title) {
+    return "Title: ".$title;
+})->where('title', '[A-Za-z]+');
