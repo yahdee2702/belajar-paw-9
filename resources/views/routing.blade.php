@@ -32,6 +32,10 @@
                 Route Parameter (Required Parameter) - 2
             </a>
 
+            <a href="{{ url('/username') }}" class="list-group-item list-group-item-action">
+                Route Parameter (Optional Parameter)
+            </a>
+
         </div>
  
         {{-- Khusus kode program untuk Route Groups di sini --}}

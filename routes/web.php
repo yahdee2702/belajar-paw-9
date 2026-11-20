@@ -27,3 +27,7 @@ Route::get('/user/{id}', function($id) {
 Route::get('/posts/{post}/comments/{comment}', function($postId, $commentId) {
     return "Post Id: ".$postId.", Comment Id: ".$commentId;
 });
+
+Route::get('username/{name?}', function($name = null) {
+    return 'Username: '.$name;
+});
