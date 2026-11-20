@@ -35,3 +35,5 @@ Route::get('username/{name?}', function($name = null) {
 Route::get('/title/{title}', function($title) {
     return "Title: ".$title;
 })->where('title', '[A-Za-z]+');
+
+Route::get('/profile/{profileId}', [RouteController::class, 'profile'])->name('profileRouteName');

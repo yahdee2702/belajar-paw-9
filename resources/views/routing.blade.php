@@ -39,8 +39,10 @@
             <a href="{{ url('/title/this-is-my-title') }}" class="list-group-item list-group-item-action">
                 Route With Regular Expression Constraints
             </a>
-
-
+            
+            <a href="{{ route('profileRouteName', ['profileId' => '123']) }}" class="list-group-item list-group-item-action">
+                Named Route
+            </a>
         </div>
  
         {{-- Khusus kode program untuk Route Groups di sini --}}
