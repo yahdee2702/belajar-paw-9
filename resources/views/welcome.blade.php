@@ -11,6 +11,9 @@
     <div class="container m-5">
         {{-- Contoh cara mereferensikan gambar di dalam file blade dengan menggunakan pendekatan Vite --}}
         <img class="img-thumbnail" src="{{ Vite::asset('resources/images/main.svg') }}" alt="image">
+        <button type="button" class="btn btn-primary">
+            <i class="bi bi-check-circle"></i> Bootstrap berhasil terpasang
+        </button>
     </div>
     @vite('resources/js/app.js')
 </body>
