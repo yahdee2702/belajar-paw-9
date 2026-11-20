@@ -25,6 +25,13 @@
             <a href="{{ url('/controller_route') }}" class="list-group-item list-group-item-action">
                 Controller Route
             </a>
+            <a href="{{ url('/user/12345') }}" class="list-group-item list-group-item-action">
+                Route Parameter (Required Parameter) - 1
+            </a>
+            <a href="{{ url('/posts/01/comments/20') }}" class="list-group-item list-group-item-action">
+                Route Parameter (Required Parameter) - 2
+            </a>
+
         </div>
  
         {{-- Khusus kode program untuk Route Groups di sini --}}
